@@ -69,10 +69,10 @@ public class Matrix {
         // Ensure that matrices are the same size
         if (hasSameInnerSize(matrix)) {
             double newMat[][] = new double[this.num_rows][this.num_cols];
-            for (int i = 0; i < num_rows; i++) {
-                for (int j = 0; j < num_cols; j++) {
+            for (int i = 0; i < this.num_rows; i++) {
+                for (int j = 0; j < matrix.num_cols; j++) {
                     newMat[i][j] = 0;
-                    for (int k = 0; k < this.num_rows; k++) {
+                    for (int k = 0; k < this.num_cols; k++) {
                         newMat[i][j] += this.mat[i][k] * matrix.mat[k][j];
                     }
                 }
