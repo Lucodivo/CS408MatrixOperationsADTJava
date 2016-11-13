@@ -61,6 +61,7 @@ public class Matrix {
 
     /**
      * Multiply two Matrix instances using matrix multiplication
+     * (DOES NOT SIMPLY MULTIPLY CORRESPONDING INDEXES)
      * @param matrix multiplier Matrix
      * @return product Matrix
      */
